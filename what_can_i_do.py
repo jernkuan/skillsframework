@@ -227,10 +227,11 @@ if "api_key" in st.secrets.openai:
 
         response = ""
         for result in results.points:
+            description = result.payload['description'].replace('\n', ' \\\n    ')
             response = response + f'''
 1. ### {result.payload['role']}
     * **{result.payload['sector']}-{result.payload['track']}**
-    * {result.payload['description'].replace('\n', ' \\\n    ')}
+    * {description}
             '''
         summary = client.chat.completions.create(
             model="gpt-4o-mini",
