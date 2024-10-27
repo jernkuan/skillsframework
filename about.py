@@ -20,7 +20,7 @@ st.subheader("Structured output")
 st.write("Based on chat input, structure json output is produced. This will be used as part of hybrid search")
 
 st.subheader("Hybrid search")
-st.write("Fixed list of sector and tracks determined based on input, embedding of input is used to against job description")
+st.write("Fixed list of sector and tracks determined based on input, embedding of input is used to search against job description")
 
 st.subheader("Summarization of possible job career")
 st.write("After extraction of possible career from qdrant based on hybrid search, summary and a story of the jobs is generated.")
