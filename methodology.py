@@ -5,7 +5,7 @@ st.set_page_config(page_title="Methodology", page_icon="ℹ️")
 
 st.title("Methodology")
 
-st.image("ingestion.jpg", caption="Ingestion flow")
+st.image("ingestion.png", caption="Ingestion flow")
 
 st.image("chat.png", caption="Chat flow")
 
